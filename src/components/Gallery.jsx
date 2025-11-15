@@ -5,14 +5,12 @@ const Gallery = () => {
   const images = [
     "../Assets/mandir 1.jpg",
     "../Assets/mandir 2.jpg",
-    "../Assets/mandir 3.jpeg",,
-   "../Assets/mandir 4.jpg",
-     "../Assets/mandir 7.jpg",
-     "../Assets/mandir 6.jpg",
-
-   
+    "../Assets/mandir 3.jpeg",
+    ,
+    "../Assets/mandir 4.jpg",
+    "../Assets/mandir 7.jpg",
+    "../Assets/mandir 6.jpg",
   ];
-
 
   return (
     <section className="gallery-section" id="gallery">
