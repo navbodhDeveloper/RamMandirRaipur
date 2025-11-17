@@ -21,7 +21,7 @@ const LiveAarti = () => {
       </div>
 
       <p className="aarti-caption">
-        Experience the divine Ram Mandir Aarti live from Ayodhya.
+        Experience the divine Ram Mandir Aarti live from Raipur.
       </p>
     </section>
   );
