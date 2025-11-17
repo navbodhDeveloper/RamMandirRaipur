@@ -8,6 +8,8 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import "./App.css";
 import BowCursor from "./CursorEffect";
+import BlogSection  from "./components/BlogSection";
+import LiveAarti from "./components/LiveAarti";
 
 
 function App() {
@@ -19,6 +21,8 @@ function App() {
       <Home />
       <About />
       <Gallery />
+        <BlogSection /> 
+            <LiveAarti /> 
       <DonationForm />
       <Contact />
       <Footer />

@@ -16,7 +16,7 @@ const Footer = () => {
           <FontAwesomeIcon icon={faEnvelope} /> Email
         </a>
         <a href="tel:+911234567890">
-          <FontAwesomeIcon icon={faPhone} /> +91 12345 67890
+          <FontAwesomeIcon icon={faPhone} /> 1234567890
         </a>
       </div>
     </footer>

@@ -26,10 +26,10 @@ const Navbar = () => {
         <a href="#gallery" className="nav-link" onClick={closeMenu}>
           Gallery
         </a>
-         <a href="#contact" className="nav-link" onClick={closeMenu}>
+         <a href="#blog" className="nav-link" onClick={closeMenu}>
           Blogs
         </a>
-         <a href="#contact" className="nav-link" onClick={closeMenu}>
+         <a href="#livearti" className="nav-link" onClick={closeMenu}>
           Live Aarti
         </a>
         <a href="#contact" className="nav-link" onClick={closeMenu}>
