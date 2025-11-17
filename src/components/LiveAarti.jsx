@@ -12,7 +12,7 @@ const LiveAarti = () => {
       <div className="aarti-container">
         <iframe
           className="aarti-video"
-          src="https://www.youtube.com/embed/VIDEO_ID_HERE?autoplay=1&mute=1"
+          src="/Assets/live.mp4"
           title="Live Aarti"
           frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
