@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* ================================
    FOOTER CONTAINER
 ================================ */
@@ -122,4 +123,50 @@
   .contact-box {
     width: 85%;
   }
+=======
+.footer {
+  background: linear-gradient(to right, #8b4513, #d97706);
+  color: #fff5e1;
+  text-align: center;
+  padding: 25px 10px;
+  font-size: 0.95rem;
+  border-top: 3px solid #f1c27d;
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.footer p {
+  margin: 0;
+  font-weight: 500;
+}
+
+.footer a {
+  color: #f1c27d;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: #fff;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border-top: 1px solid #e7e7e7;
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.social-icons a:hover {
+  color: #f9b95d;
+>>>>>>> 1baeffa9a5f3de632b379ceccbc24c3a8f633c19
 }
