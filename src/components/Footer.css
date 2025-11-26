@@ -1,0 +1,125 @@
+/* ================================
+   FOOTER CONTAINER
+================================ */
+.footer {
+  background: linear-gradient(135deg, #8b4513, #d97706);
+  padding: 40px 20px 25px;
+  text-align: center;
+  color: #fff5e1;
+  border-top: 2px solid #f1c27d;
+}
+
+/* ================================
+   HEADING
+================================ */
+.footer h3 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+  letter-spacing: 1px;
+  color: #fff;
+}
+
+/* Small underline below heading */
+.footer h3::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 2.5px;
+  background: #ffe5b4;
+  margin: 6px auto 12px;
+  border-radius: 4px;
+}
+
+/* ================================
+   SUBTEXT
+================================ */
+.contact-info p {
+  font-size: 0.95rem;
+  margin-bottom: 18px;
+  color: #ffeacd;
+}
+
+/* ================================
+   SOCIAL ICONS
+================================ */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+}
+
+.social-icons a {
+  color: #fff;
+  font-size: 0.9rem;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: 0.2s ease;
+}
+
+.social-icons a:hover {
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+/* ================================
+   CONTACT BOXES (SMALLER)
+================================ */
+.contact-numbers {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-bottom: 18px;
+}
+
+.contact-box {
+  background-color: #b1650042;
+
+  border-radius: 10px;
+  padding: 10px 14px;
+  width: 200px;            /* MUCH SMALLER */
+  min-height: 65px;        /* SMALL height */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.12);
+  color: #3b2f1d;
+  font-size: 0.85rem;
+  transition: 0.25s ease;
+}
+
+.contact-box p {
+  margin: 3px 0;
+}
+
+.contact-box strong {
+  font-size: 0.9rem;
+  color: #fff;
+}
+
+/* Hover effect (very light) */
+.contact-box:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 200, 80, 0.3);
+}
+
+/* ================================
+   COPYRIGHT
+================================ */
+.footer-copy,
+.footer p:last-child {
+  margin-top: 10px;
+  font-size: 0.8rem;
+  color: #fff;
+}
+
+/* ================================
+   MOBILE RESPONSIVE
+================================ */
+@media (max-width: 520px) {
+  .contact-box {
+    width: 85%;
+  }
+}

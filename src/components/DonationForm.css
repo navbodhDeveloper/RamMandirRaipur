@@ -1,0 +1,128 @@
+/* Container */
+.donation-wrapper {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 20px;
+  text-align: center;
+  background: #f8f9fa; /* Light background like in the image */
+  border-radius: 16px;
+}
+
+/* Title */
+.donation-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #2d3a3a;
+}
+
+/* Donation Card */
+.donation-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+  border: 1px solid #eee;
+  margin-bottom: 30px;
+}
+
+/* Hover Effect */
+.donation-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.2);
+  filter: drop-shadow(0 0 20px rgba(255, 215, 0, 0.5)); /* soft golden glow */
+}
+
+/* Bank Logo */
+.bank-logo img {
+  width: 160px;
+  height: auto;
+  object-fit: contain;
+  margin-bottom: 20px;
+}
+
+/* Flex Layout */
+.content-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* QR Column */
+.qr-column {
+  flex: 1;
+  max-width: 230px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  user-select: none;
+  margin-bottom: 20px; /* Space between QR code and other details */
+}
+
+.qr-column:hover {
+  transform: translateY(-6px);
+  background-color: #fff8e1; /* Light warm cream (golden tone) */
+  box-shadow: 0 0 12px 5px rgba(255, 193, 7, 0.85), 0 14px 28px rgba(0, 0, 0, 0.18);
+}
+
+/* QR Heading */
+.qr-heading {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #2d3a3a;
+  margin-bottom: 15px;
+}
+
+/* QR Image */
+.qr-image {
+  width: 200px; /* Increase QR code size for better visibility */
+  height: 200px;
+  object-fit: contain;
+  border-radius: 16px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+/* Details Column */
+.details-column {
+  flex: 2;
+  min-width: 250px;
+  text-align: left;
+}
+
+.bank-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #222;
+}
+
+.details-list p {
+  margin: 6px 0;
+  font-size: 1rem;
+  color: #555;
+}
+
+.details-list span {
+  font-weight: 600;
+  color: #333;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  .content-row {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .details-column {
+    text-align: center;
+  }
+}

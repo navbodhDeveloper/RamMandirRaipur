@@ -1,0 +1,93 @@
+/* ===========================
+   NAVBAR (DESKTOP)
+=========================== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to right, #8b4513, #d97706);
+  padding: 15px 30px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.nav-logo {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #f1c27d;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-logo img {
+  width: 45px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.nav-links {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff5e1;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #f1c27d;
+}
+
+.hamburger {
+  display: none;
+  font-size: 1.8rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* ===========================
+   MOBILE STYLES
+=========================== */
+@media (max-width: 768px) {
+
+  /* Hide desktop links, convert to dropdown menu */
+  .nav-links {
+    position: absolute;
+    top: -50em;                 /* Hidden above navbar */
+    left: 0;
+    width: 100%;                 /* Full width dropdown */
+    flex-direction: column;
+    background: linear-gradient(to bottom, #8b4513, #d97706);
+    text-align: center;
+    transition: top 0.4s ease-in-out;
+    padding: 20px 0;
+    border-radius: 0 0 10px 10px;
+    z-index: 999;
+  }
+
+  /* When menu is active – dropdown appears */
+  .nav-links.active {
+    top: 68px;   /* Appears right below navbar */
+  }
+
+  /* Show hamburger icon */
+  .hamburger {
+    display: block;
+  }
+
+  /* Make logo smaller on mobile */
+  .nav-logo {
+    font-size: 1.3rem;
+    gap: 8px;
+  }
+
+  .nav-logo img {
+    width: 35px;
+  }
+}
