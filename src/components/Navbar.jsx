@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import "./Navbar.css";
+import { FaOm } from "react-icons/fa";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -35,9 +36,12 @@ const Navbar = () => {
         <a href="#contact" className="nav-link" onClick={closeMenu}>
           Contact
         </a>
-        <a href="#donation" className="nav-link" onClick={closeMenu} >
-          <b>DONATE</b>
-        </a>
+<a href="#donation" className="nav-link donate-btn" onClick={closeMenu}>
+  <span className="donate-icon">
+    <FaOm />
+  </span>
+  <b>DONATE</b>
+</a>
       </div>
       <div className="hamburger" id="hamburger" onClick={toggleMenu}>
         {isOpen ? <FaTimes /> : <FaBars />}

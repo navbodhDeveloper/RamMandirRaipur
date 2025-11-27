@@ -7,11 +7,7 @@ const Home = () => {
       <div className="video-background">
         <video
           className="background-video"
-<<<<<<< HEAD
           src="/Assets/bg.mp4"
-=======
-          src="/Assets/finalbg.mp4"
->>>>>>> 1baeffa9a5f3de632b379ceccbc24c3a8f633c19
           autoPlay
           loop
           muted

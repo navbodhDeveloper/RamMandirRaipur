@@ -3,47 +3,102 @@
 =========================== */
 .navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between;  /* Logo left, links right */
   align-items: center;
   background: linear-gradient(to right, #8b4513, #d97706);
-  padding: 15px 30px;
+  padding: 12px 30px;
   position: sticky;
   top: 0;
   z-index: 1000;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* Logo */
 .nav-logo {
-  font-size: 1.6rem;
-  font-weight: bold;
-  color: #f1c27d;
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #f1c27d;           /* space between logo image and text */
 }
 
 .nav-logo img {
   width: 45px;
-  height: auto;
+  height: 45px;
+  object-fit: contain;
   border-radius: 50%;
+  filter: drop-shadow(0 0 2px rgba(0,0,0,0.4)); /* subtle shadow for clarity */
 }
 
+/* Navigation Links */
 .nav-links {
   display: flex;
-  gap: 25px;
+  align-items: center;  /* vertically align links */
 }
 
 .nav-links a {
   text-decoration: none;
   color: #fff5e1;
-  font-weight: 500;
-  transition: 0.3s;
+  font-weight: 600;
+  padding: 5px 14px;   /* Increase clickable area */
+  border-radius: 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  user-select: non
 }
 
-.nav-links a:hover {
-  color: #f1c27d;
+.nav-links a:hover,
+.nav-links a:focus {
+  background-color: #eb0909d0; /* bright red */
+
+  outline: none;
+  cursor: pointer;
 }
 
+/* DONATE Button */
+.donate-btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 5px 14px;
+  box-shadow: 0 4px 12px rgba(243, 47, 40, 0.548);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  user-select: none;
+  text-decoration: none;
+}
+
+.donate-btn:hover {
+  transform: scale(1.05);
+}
+
+.donate-btn b {
+  color: white;
+  font-weight: 700;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  margin-left: 8px; /* reduce space */
+}
+
+/* Circular white background for icon */
+.donate-icon {
+  background-color: white;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.15);
+}
+
+/* Style the icon inside the circle */
+.donate-icon svg {
+  color: #c86c09;
+  width: 20px;
+  height: 20px;
+}
+
+/* Hamburger Icon */
 .hamburger {
   display: none;
   font-size: 1.8rem;
@@ -56,32 +111,28 @@
 =========================== */
 @media (max-width: 768px) {
 
-  /* Hide desktop links, convert to dropdown menu */
   .nav-links {
     position: absolute;
-    top: -50em;                 /* Hidden above navbar */
+    top: -50em;                  /* Hidden initially */
     left: 0;
-    width: 100%;                 /* Full width dropdown */
+    width: 100%;
     flex-direction: column;
     background: linear-gradient(to bottom, #8b4513, #d97706);
     text-align: center;
     transition: top 0.4s ease-in-out;
     padding: 20px 0;
     border-radius: 0 0 10px 10px;
-    z-index: 999;
+    gap: 15px;
   }
 
-  /* When menu is active – dropdown appears */
   .nav-links.active {
-    top: 68px;   /* Appears right below navbar */
+    top: 68px;
   }
 
-  /* Show hamburger icon */
   .hamburger {
     display: block;
   }
 
-  /* Make logo smaller on mobile */
   .nav-logo {
     font-size: 1.3rem;
     gap: 8px;
@@ -89,5 +140,10 @@
 
   .nav-logo img {
     width: 35px;
+    height: 35px;
+  }
+
+  .nav-links a {
+    font-size: 1.1rem;
   }
 }

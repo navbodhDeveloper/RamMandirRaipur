@@ -56,3 +56,26 @@
     height: 250px;
   }
 }
+
+.offline-message {
+  padding: 50px 20px;
+  font-size: 1.2rem;
+  color: #b45309;
+  background: #fff3e0;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+.live-link-button {
+  display: inline-block;
+  background-color: #b45309;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.live-link-button:hover {
+  background-color: #92390f;
+}
