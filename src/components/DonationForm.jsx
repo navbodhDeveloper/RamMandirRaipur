@@ -1,7 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import "./DonationForm.css";
 
 const DonationForm = () => {
+  const upiID = "shree90099@barodampay";
+  const [copied, setCopied] = useState(false);
+
+  const handleCopy = () => {
+    navigator.clipboard.writeText(upiID)
+      .then(() => setCopied(true))
+      .catch((err) => console.error("Failed to copy!", err));
+
+    setTimeout(() => setCopied(false), 2000); // Reset after 2 seconds
+  };
+
   return (
     <div className="donation-wrapper" id="donation">
 
@@ -28,11 +39,16 @@ const DonationForm = () => {
             <h3 className="bank-title">Shri Ram Mandir Raipur</h3>
 
             <div className="details-list">
-              <p><span>UPI ID: </span>shree90099@barodampay</p>
+              <p>
+                <span>UPI ID: </span>{upiID}{" "}
+                <button onClick={handleCopy} className="copy-button">
+                  {copied ? "Copied ✅" : "Copy"}
+                </button>
+              </p>
               <p><span>Account Name: </span>Shri Ram Mandir Nirman Samiti</p>
               <p><span>Account Number: </span>39170200000079</p>
               <p><span>IFSC Code: </span>BARB0AVANTI</p>
-              <p><span>Branch: </span>Avanti Vihar,Raipur</p>
+              <p><span>Branch: </span>Avanti Vihar, Raipur</p>
             </div>
 
           </div>
