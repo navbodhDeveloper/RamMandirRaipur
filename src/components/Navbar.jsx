@@ -33,7 +33,7 @@ const Navbar = () => {
          <a href="#livearti" className="nav-link" onClick={closeMenu}>
           Live Aarti
         </a>
-        <a href="#contact" className="nav-link" onClick={closeMenu}>
+        <a href="#contactInfo" className="nav-link" onClick={closeMenu}>
           Contact
         </a>
 <a href="#donation" className="nav-link donate-btn" onClick={closeMenu}>

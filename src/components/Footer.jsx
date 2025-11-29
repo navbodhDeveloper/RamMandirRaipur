@@ -6,7 +6,7 @@ import { faInstagram, faYoutube, faFacebook } from "@fortawesome/free-brands-svg
 
 const Footer = () => {
   return (
-    <footer className="footer">
+    <footer className="footer" id="contactInfo">
 
       <h3 className="footer-heading">CONTACT US</h3>
 
@@ -15,7 +15,7 @@ const Footer = () => {
       </div>
 
       <div className="social-icons">
-        <a href="#" target="_blank"><FontAwesomeIcon icon={faInstagram} /> Instagram</a>
+        <a href="https://www.instagram.com/shreerammandir214?utm_source=qr&igsh=MTgwa3Bubndmem8xaA==" target="_blank"><FontAwesomeIcon icon={faInstagram} /> Instagram</a>
         <a href="https://www.youtube.com/live/JB3OC5wFKDA?si=W1ckSEEWALMnkLIx" target="_blank"><FontAwesomeIcon icon={faYoutube} /> YouTube</a>
         <a href="https://www.facebook.com/share/1BMXaCL3G3/?mibextid=wwXIfr" target="_blank"><FontAwesomeIcon icon={faFacebook} /> Facebook</a>
         <a href="mailto:rammandirraipur@gmail.com"><FontAwesomeIcon icon={faEnvelope} /> Email</a>
@@ -23,11 +23,15 @@ const Footer = () => {
 
       <div className="contact-numbers">
         <div className="contact-box">
-          <p><strong>Mandir Prabandhak Umesh Shukla</strong></p>
+          <p><strong>Trust Manager (Hemant Karmele)</strong></p>
+          <p>+91 9977227199</p>
+        </div>
+        <div className="contact-box">
+          <p><strong>Mandir Prabandhak (Umesh Shukla)</strong></p>
           <p>+91 8720040199</p>
         </div>
         <div className="contact-box">
-          <p><strong>Mandir Prabandhak Pujari (Hanumanth Ji)</strong></p>
+          <p><strong>Mandir Pradhan Pujari (Hanumanth Ji)</strong></p>
           <p>+91 7000932687</p>
         </div>
         <div className="contact-box">

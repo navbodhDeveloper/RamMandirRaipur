@@ -9,7 +9,7 @@ const LiveAarti = () => {
   const liveEndMinute = 30;
 
   // YouTube channel /live URL
-  const liveURL = "https://www.youtube.com/channel/UC9RMDSGGg6c15XnYXSGHN6w/live";
+  const liveURL = "https://www.youtube.com/channel/UCJlpMH0sntPikQ8ksnbpxtg/live";
 
   // ======= STATE =======
   const [currentTime, setCurrentTime] = useState(new Date());
@@ -62,6 +62,8 @@ const LiveAarti = () => {
       <p className="aarti-caption">
         Experience the divine Ram Mandir Aarti live from Raipur between 7:00 PM to 7:30 PM.
       </p>
+
+      
     </section>
   );
 };
